@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Styled</title>
+    <style>
+        *[itemprop]::before {
+        content: attr(itemprop) ": ";
+        text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <a rel="self" href="styled">self</a>
+    <ul itemscope="itemscope" itemtype="http://schema.org/TVSeries">
+        <li><span itemprop="name">Top Gear</span></li>
+        <li><span itemprop="inLanguage">en</span></li>
+        <li><ul itemprop="actor" itemscope="itemscope" itemtype="http://schema.org/Person">
+            <li><span itemprop="name">Jeremy Clarkson</span></li>
+        </ul></li>
+    </ul>
+</body>
+</html>
